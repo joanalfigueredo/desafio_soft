@@ -1,0 +1,91 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.airbnbContainer {
+  background-color: #ffffff;
+  max-width: 1280px;
+  min-height: 50%;
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  a {
+    text-decoration: none;
+    color: #000;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__new {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 200px;
+  }
+
+  &__back {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 200px;
+  }
+
+  &__list {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-column-gap: 10px;
+    a {
+      min-width: 15rem;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 2rem;
+    }
+
+    &__card {
+      min-width: 10rem;
+      width: 100%;
+      border: 3px solid #808080;
+      border-radius: 10px;
+      padding: 1rem;
+      display: block;
+      justify-items: center;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+      height: 100%;
+
+      h1 {
+          font-size: 2rem;
+          font-weight:700;
+          text-transform: capitalize;
+      }
+
+      p {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.btn {
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  background: #f05a5b;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}

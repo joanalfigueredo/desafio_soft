@@ -1,0 +1,106 @@
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.detailsContainer {
+  background-color: #ffffff;
+  max-width: 1280px;
+  min-height: 50%;
+  width: 100%;
+  height: 70%;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  .propertyDetails {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+    justify-content: space-around;
+    height:100%;
+
+    &__description {
+      border-right: 2px solid #e3e3e3;
+      width: 50%;
+      height: 100%;
+      font-size: x-large;
+      &__title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight:700;
+        text-transform: capitalize;
+      }
+      &_font {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_size {
+          font-size: x-large;
+        }
+      }
+    }
+
+    &__feedbacks {
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      overflow-y: scroll;
+      &__cardList {
+        display: grid;
+        gap: 1rem;
+        width: 100%;
+        padding-left: 1rem;
+        h1{
+          font-size: 2rem;
+          font-weight:700;  
+        }
+        &__card {
+          min-width: 10rem;
+          width: 100%;
+          max-width: 35rem;
+          border: 3px solid #808080;
+          border-radius: 10px;
+          padding: 1rem;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+          &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          &__name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+              margin: 0;
+            }
+          }
+          &__comment {
+            text-align: left;
+            word-wrap: break-word;
+          }
+        }
+      }
+      .btn {
+        border: 0;
+        border-radius: 10px;
+        width: 50%;
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 16px;
+        font-weight: bold;
+        background: #f05a5b;
+        color: #ffffff !important;
+        cursor: pointer;
+        transition: opacity 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
